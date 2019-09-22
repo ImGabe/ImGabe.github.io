@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Righteous&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #a99fe0;
+  font-family: "Open Sans", sans-serif;
+}
+
+a,
+a:visited {
+  color: #a99fe0;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  transition: margin-right 1s;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 4em;
+  font-family: "Righteous", cursive;
+  color: #293845;
+}
+
+.container {
+  padding: 0px 8px 8px 8px;
+  margin: 0px 8px 8px 8px;
+}
+
+.bio {
+  font-size: 1.5em;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 18vh;
+  width: 100%;
+  color: #a99fe0;
+  background-color: #293845;
+}
+
+.icon {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.footer .icon {
+  font-size: 3em;
+}
+
+@keyframes blur-revel {
+  0% {
+      opacity: 0;
+      filter:  drop-shadow(.10em);
+  }
+  100% {
+      opacity: 1;
+      filter:  drop-shadow(0);
+  }
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 50px;
+  color: #a99fe0;
+  background-color: #293845;
+  transition: width 1s, content 2s;
+}
+
+.circle:hover {
+  width: 250px;
+}
+
+.circle:hover:before{
+  content:attr(data-text);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position:absolute;
+  width:inherit;
+  height:inherit;
+  animation: blur-revel .8s ease-in-out 1;
+}
+
+.circle:hover a {
+  margin-right: 180px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .animation.center {
+    flex-direction: column;
+  }
+  .container {
+    padding: 0px 10px 70px 10px;
+    margin: 0px 10px 70px 10px;
+  }
+
+  .circle:hover {
+    margin: 20px;
+    width: 36vh;
+  }
+
+  .circle:hover a {
+    margin-right: 180px;
+  }
+
+  .footer {
+    position: 10vh;
+  }
+}
