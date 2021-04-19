@@ -1,77 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Gabe</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/b81b112107.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <h1 class="title">Gabe</h1>
-    <div class="container">
-      <div class="bio">
-        <p>
-          I'm a web developer and student. JavaScript, Python and C are cool. 💜
-        </p>
-      </div>
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" title="Style" />
+</head>
 
-      <div class="animation center">
-        <div data-text="keybord-sound-js" class="circle center">
-          <a
-            href="https://github.com/ImGabe/keybord-sound-js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-github icon"></i>
-          </a>
+<body>
+    <!-- Name and bio -->
+    <h1 id="title">I'm Gabe</h1>
+    <p>
+        Full stack web developer, javascript, go and python. Brazilian, born in
+        Rio de Janeiro.
+    </p>
+    <!-- Projects -->
+    <section id="projects">
+        <div class="project">
+            <h2>
+                <a href="https://github.com/ImGabe/solid-wallpaper" target="_blank"
+                    rel="noopener noreferrer">solid-wallpaper</a>
+            </h2>
+            <p>CLI app to create wallpaper with solid color.</p>
         </div>
-        <div data-text="colorful-text" class="circle center">
-          <a
-            href="https://github.com/ImGabe/colorful-text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-github icon"></i>
-          </a>
+        <div class="project">
+            <h2>
+                <a href="https://github.com/ImGabe/to-do" target="_blank" rel="noopener noreferrer">to-do</a>
+            </h2>
+            <p>Simple to-do list in GO with web server and api.</p>
         </div>
-        <div data-text="colors-in-center" class="circle center">
-          <a
-            href="https://github.com/ImGabe/colors-in-center"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-github icon"></i>
-          </a>
+        <div class="project">
+            <h2>
+                <a href="https://github.com/ImGabe/pitagoras-js" target="_blank"
+                    rel="noopener noreferrer">pitagoras-js</a>
+            </h2>
+            <p>Pythagorean theorem application in javascript.</p>
         </div>
-        <div data-text="pitágoras" class="circle center">
-          <a
-            href="https://github.com/ImGabe/pitagoras"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-github icon"></i>
-          </a>
-        </div>
-        
-      </div>
-    </div>
-    <!-- Footer -->
-    <div class="footer center">
-      <a href="https://github.com/ImGabe" target="_blank"
-        ><i class="fab fa-github icon"></i
-      ></a>
-      <a href="https://twitter.com/ImGabeDev" target="_blank"
-        ><i class="fab fa-twitter icon"></i
-      ></a>
-      <a href="mailto:gabrielpmonte@hotmail.com"
-        ><i class="fas fa-envelope icon"></i
-      ></a>
-    </div>
-    <script src="./main.js"></script>
-  </body>
+    </section>
+    <!-- Contacts -->
+    <section id="contacts">
+        <h3>Contacts</h3>
+        <address>
+            <a href="https://github.com/ImGabe" target="_blank">github</a>
+        </address>
+        <address>
+            <a href="mailto:gabrielpmonte@hotmail.com">email</a>
+        </address>
+    </section>
+</body>
+
 </html>
