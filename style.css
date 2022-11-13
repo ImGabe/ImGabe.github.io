@@ -1,19 +1,20 @@
 :root {
-  --title-font-family:"Merriweather", serif;
+  --title-font-family: "Merriweather", serif;
   --p-font-family: 'Roboto Mono', monospace;
   --other-font-family: Menlo, monospace;
 
-  --paper-background-color-ligth:papayawhip;
-  --link-color-ligth: #00a8ff;
-  --link-color-active-ligth: #0097e6;
-  
-  --paper-background-color-dark:whitesmoke;
-  --link-color-dark: #9c88ff;
-  --link-color-active-dark: #8c7ae6;
+  --paper-background-color-ligth: papayawhip;
+  --link-color-ligth: #0800FF;
+  --link-color-active-ligth: #003F61;
+
+  --paper-background-color-dark: whitesmoke;
+  --link-color-dark: #0800FF;
+  --link-color-active-dark: #3620A7;
 }
 
 a {
   color: var(--link-color-ligth);
+  font-size: larger;
   text-decoration: none;
 }
 
@@ -46,10 +47,10 @@ section {
   text-align: center;
 }
 
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--title-font-family)
-
 }
 
 p {
@@ -94,25 +95,25 @@ p {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background:#2f3542 ;
+    background: #2f3542;
   }
 
   .container {
-    background-color: var(--paper-background-color-dark);;
-  };
+    background-color: var(--paper-background-color-dark);
+  }
 
   a {
     color: var(--link-color-dark);
     text-decoration: none;
   }
-  
+
   a:hover,
   a:visited,
   a:focus {
     color: var(--link-color-active-dark);
     text-decoration: none;
   }
-  
+
   a:active {
     color: #000000;
     background-color: var(--link-color-active-dark);
